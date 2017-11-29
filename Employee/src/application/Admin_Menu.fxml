@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="263.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminMenuController">
+   <children>
+      <Pane prefHeight="276.0" prefWidth="436.0">
+         <children>
+            <Button fx:id="timeClockButton" layoutX="81.0" layoutY="103.0" mnemonicParsing="false" onAction="#timeClockButtonClicked" prefHeight="50.0" prefWidth="140.0" text="Time Clock" />
+            <Button fx:id="databaseButton" layoutX="81.0" layoutY="170.0" mnemonicParsing="false" onAction="#employeeDatabaseButtonClicked" prefHeight="50.0" prefWidth="140.0" text="Employee Database" />
+            <Button fx:id="weeklyReportButton" layoutX="249.0" layoutY="103.0" mnemonicParsing="false" onAction="#weeklyReportButtonClicked" prefHeight="56.0" prefWidth="140.0" text="Weekly Reports" />
+            <Button fx:id="cancelButton" layoutX="249.0" layoutY="170.0" mnemonicParsing="false" onAction="#cancelButtonclicked" prefHeight="50.0" prefWidth="140.0" text="Cancel" />
+            <Label layoutX="81.0" layoutY="38.0" prefHeight="40.0" prefWidth="308.0" text="Admin Menu: Welcome">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

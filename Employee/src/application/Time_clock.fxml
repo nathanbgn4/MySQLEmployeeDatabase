@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TimeClockController">
+   <children>
+      <Button id="ClockIn" fx:id="clockInButton" layoutX="73.0" layoutY="156.0" mnemonicParsing="false" onAction="#clockInButtonClicked" prefHeight="89.0" prefWidth="145.0" text="Clock In" />
+      <Button id="ClockOut" fx:id="clockOutButton" layoutX="234.0" layoutY="156.0" mnemonicParsing="false" onAction="#clockOutButtonClicked" prefHeight="89.0" prefWidth="145.0" text="Clock Out" />
+      <Label id="TimeField" fx:id="timeLabel" layoutX="164.0" layoutY="73.0" prefHeight="19.0" prefWidth="145.0" text="System Time">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuBar prefHeight="29.0" prefWidth="468.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#menuItemCloseClicked" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>

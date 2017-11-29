@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="1611.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeDatabaseTableController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="1611.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+                  <MenuItem id="ReportButton" fx:id="viewMenuReport" mnemonicParsing="false" onAction="#viewMenuReportSwitch" text="Report Filing" />
+                  <MenuItem id="ClockButton" fx:id="viewMenuTimeClock" mnemonicParsing="false" onAction="#viewMenuTimeClockClicked" text="Time Clock" />
+              <MenuItem fx:id="menuClose" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem fx:id="newMenuitem" mnemonicParsing="false" onAction="#newTableRow" text="New Employee" />
+                  <MenuItem fx:id="editMenuItem" mnemonicParsing="false" onAction="#editTableRow" text="Edit Employee" />
+              <MenuItem fx:id="deleteMenuItem" mnemonicParsing="false" onAction="#deleteTableRow" text="Delete Employee" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="employeeTableView" editable="true" layoutY="29.0" onSort="#initialize" prefHeight="725.0" prefWidth="1611.0">
+        <columns>
+          <TableColumn fx:id="employeeNumberColumn" editable="false" prefWidth="83.0" text="Employee ID" />
+          <TableColumn fx:id="lastNameColumn" minWidth="5.0" prefWidth="108.0" text="Last Name" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="88.0" text="First name" />
+            <TableColumn fx:id="employeePositionColumn" prefWidth="116.0" text="Position" />
+            <TableColumn fx:id="addressColumn" prefWidth="197.0" text="Address" />
+            <TableColumn fx:id="cityColumn" minWidth="0.0" prefWidth="99.0" text="City" />
+            <TableColumn fx:id="stateColumn" prefWidth="65.0" text="State" />
+            <TableColumn fx:id="zipCodeColumn" prefWidth="99.0" text="Zip Code" />
+            <TableColumn fx:id="phoneNumberColumn" prefWidth="169.0" text="Phone" />
+            <TableColumn fx:id="emailColumn" prefWidth="183.0" text="Email" />
+            <TableColumn fx:id="payRateColumn" prefWidth="92.0" text="Pay Rate" />
+            <TableColumn fx:id="usernameColumn" prefWidth="116.0" text="Username" />
+            <TableColumn fx:id="passwordColumn" prefWidth="106.0" text="Password" />
+            <TableColumn fx:id="accessColumn" prefWidth="88.0" sortable="false" text="Access" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

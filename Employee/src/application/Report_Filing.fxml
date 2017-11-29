@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="794.0" prefWidth="1113.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReportFilingController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="1113.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Load" />
+              <MenuItem mnemonicParsing="false" text="Delete" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+                  <Menu mnemonicParsing="false" text="View">
+                    <items>
+                      <MenuItem fx:id="menuTimeClockSwitch" mnemonicParsing="false" onAction="#viewMenuTimeClockSwitch" text="Time Clock" />
+                        <MenuItem fx:id="menuDatabaseItem" mnemonicParsing="false" onAction="#viewMenuDatabaseSwitch" text="Database" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="reportTableView" layoutY="29.0" prefHeight="765.0" prefWidth="1112.0">
+        <columns>
+          <TableColumn fx:id="employeeNameColumn" prefWidth="204.0" text="Employee" />
+            <TableColumn fx:id="firstDayColumn" prefWidth="152.0" text="Day 1">
+               <columns>
+                  <TableColumn fx:id="clockInOne" prefWidth="75.0" text="Clock In" />
+                  <TableColumn fx:id="clockOutOne" prefWidth="75.0" text="Clock Out" />
+               </columns></TableColumn>
+            <TableColumn fx:id="secondDayColumn" prefWidth="164.0" text="Day 2">
+               <columns>
+                  <TableColumn fx:id="clockInTwo" prefWidth="75.0" text="Clock In" />
+                  <TableColumn fx:id="clockOutTwo" prefWidth="75.0" text="Clock Out" />
+               </columns></TableColumn>
+            <TableColumn fx:id="thirdDayColumn" prefWidth="167.0" text="Day 3">
+               <columns>
+                  <TableColumn fx:id="clockInThree" prefWidth="75.0" text="Clock In" />
+                  <TableColumn fx:id="clockOutThree" prefWidth="75.0" text="Clock Out" />
+               </columns></TableColumn>
+            <TableColumn fx:id="fourthDayColumn" prefWidth="183.0" text="Day 4">
+               <columns>
+                  <TableColumn fx:id="clockinFour" prefWidth="75.0" text="Clock In" />
+                  <TableColumn fx:id="clockOutFour" prefWidth="75.0" text="Clock Out" />
+               </columns></TableColumn>
+            <TableColumn fx:id="fifthDayColumn" prefWidth="150.0" text="Day 5">
+               <columns>
+                  <TableColumn fx:id="clockInFive" prefWidth="75.0" text="Clock In" />
+                  <TableColumn fx:id="clockOut5" prefWidth="75.0" text="Clock Out" />
+               </columns></TableColumn>
+            <TableColumn fx:id="totalHoursColumn" prefWidth="157.0" text="Total Hours" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

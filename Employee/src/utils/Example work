@@ -1,0 +1,14 @@
+TODO
+
+make ClockEntryDAO
+	
+	needs its own table - has to store employee id
+		--the clockin button can auto populate, no ui entry form
+		--store the time in, and the time out.
+			
+		--can store inside the employee object that loginutils returns <-- need to make that global somehow
+			--on app close do checkout			
+		needs insert, get, and getgriddata	
+
+make ReportDAO
+	needs insert, get, and getGridData
